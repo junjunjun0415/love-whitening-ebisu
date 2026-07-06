@@ -35,11 +35,34 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
-    width: 94%;
+    width: 84%;
     display: block;
     text-decoration: none;
     font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
   }
+
+  /* 追従型（画面下部固定）バナー */
+  .sticky-cta {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: min(92vw, 760px);
+    display: block;
+    text-decoration: none;
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, .28));
+  }
+  .sticky-cta .hp-main { padding: clamp(10px, 2vw, 15px) 12px; }
+  .sticky-cta .hp-sub {
+    background: rgba(255, 255, 255, .93);
+    border-radius: 999px;
+    padding: 2px 16px;
+    width: max-content;
+    margin: 6px auto 0;
+  }
+  body { padding-bottom: 110px; }
   .hp-main {
     position: relative;
     overflow: hidden;
@@ -158,8 +181,17 @@
 
   <img class="section" src="img/section11-e5.webp" alt="" loading="lazy">
 
-  <p style="text-align:center; font-size:11px; color:#b0989a; padding:6px 0; background:#fdf3f4;">恵比寿店版 v9（最新版）</p>
+  <p style="text-align:center; font-size:11px; color:#b0989a; padding:6px 0; background:#fdf3f4;">恵比寿店版 v10（最新版）</p>
 
 </div>
+
+<a class="sticky-cta" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000571194">
+  <span class="hp-main">
+    <svg class="hp-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4.5" width="20" height="17" rx="2.5" fill="#fff"/><rect x="6" y="2" width="2.6" height="5" rx="1.3" fill="#fff"/><rect x="15.4" y="2" width="2.6" height="5" rx="1.3" fill="#fff"/><rect x="2" y="9.5" width="20" height="1.6" fill="#3e9a15"/><g fill="#3e9a15"><rect x="6" y="13" width="3" height="3" rx=".6"/><rect x="10.5" y="13" width="3" height="3" rx=".6"/><rect x="15" y="13" width="3" height="3" rx=".6"/><rect x="6" y="17" width="3" height="3" rx=".6"/><rect x="10.5" y="17" width="3" height="3" rx=".6"/></g></svg>
+    <span class="hp-text">ホットペッパーで予約する</span>
+    <span class="hp-arrow">›</span>
+  </span>
+  <span class="hp-sub">＼ 24時間予約受付中！ ／</span>
+</a>
 </body>
 </html>
