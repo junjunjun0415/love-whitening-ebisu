@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LOVEホワイトニング恵比寿店｜セルフホワイトニング</title>
-<meta name="description" content="LOVEホワイトニング恵比寿店のセルフホワイトニング。お得なキャンペーンはLINE登録から。">
+<meta name="description" content="LOVEホワイトニング恵比寿店のセルフホワイトニング。お得なキャンペーンはホットペッパーから24時間予約受付中。">
 <meta property="og:title" content="LOVEホワイトニング恵比寿店｜セルフホワイトニング">
-<meta property="og:description" content="LOVEホワイトニング恵比寿店のセルフホワイトニング。お得なキャンペーンはLINE登録から。">
+<meta property="og:description" content="LOVEホワイトニング恵比寿店のセルフホワイトニング。お得なキャンペーンはホットペッパーから24時間予約受付中。">
 <meta property="og:image" content="img/section01-e5.webp">
 <meta property="og:type" content="website">
 <style>
@@ -26,24 +26,34 @@
     height: auto;
   }
 
-  /* CTA画像＋光るLINEボタン */
+  /* CTA画像＋ホットペッパー予約バナー */
   .cta-block { position: relative; }
 
-  .shine-btn {
+  .cta-btn {
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
-    display: inline-block;
-    overflow: hidden;
-  }
-  .shine-btn img {
+    width: 94%;
     display: block;
-    height: 50px;
-    width: auto;
+    text-decoration: none;
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
   }
-  .shine-btn::before {
+  .hp-main {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(8px, 1.5vw, 14px);
+    background: linear-gradient(180deg, #7cd34b 0%, #4db01f 55%, #3e9a15 100%);
+    border: 2px solid #2f8408;
+    border-radius: 14px;
+    box-shadow: 0 4px 0 #2a7a06, 0 6px 14px rgba(0, 0, 0, .25);
+    padding: clamp(12px, 2.4vw, 20px) 12px;
+  }
+  .hp-main::before {
     content: "";
     position: absolute;
     top: 0;
@@ -62,6 +72,29 @@
     50% { left: 130%; }
     100% { left: 130%; }
   }
+  .hp-icon { width: clamp(22px, 3.4vw, 30px); height: auto; flex: none; }
+  .hp-text {
+    color: #fff;
+    font-weight: 800;
+    font-size: clamp(17px, 3.4vw, 28px);
+    letter-spacing: .02em;
+    white-space: nowrap;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .18);
+  }
+  .hp-arrow {
+    color: #fff;
+    font-weight: 800;
+    font-size: clamp(20px, 3.6vw, 30px);
+    line-height: 1;
+  }
+  .hp-sub {
+    display: block;
+    text-align: center;
+    color: #2c541c;
+    font-weight: 700;
+    font-size: clamp(11px, 1.9vw, 15px);
+    margin-top: 6px;
+  }
 
   .map { display: block; width: 100%; height: 450px; border: 0; }
 </style>
@@ -74,8 +107,13 @@
 
   <div class="cta-block">
     <img class="section" src="img/section03-e5.webp" alt="" loading="lazy">
-    <a class="shine-btn" href="https://utage-system.com/line/open/qelmGhBZePb5?mtid=pl4ZRQSJRFHp">
-      <img src="img/line-button.png?v=4" alt="LINEで無料相談を予約する">
+    <a class="cta-btn" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000571194">
+      <span class="hp-main">
+        <svg class="hp-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4.5" width="20" height="17" rx="2.5" fill="#fff"/><rect x="6" y="2" width="2.6" height="5" rx="1.3" fill="#fff"/><rect x="15.4" y="2" width="2.6" height="5" rx="1.3" fill="#fff"/><rect x="2" y="9.5" width="20" height="1.6" fill="#3e9a15"/><g fill="#3e9a15"><rect x="6" y="13" width="3" height="3" rx=".6"/><rect x="10.5" y="13" width="3" height="3" rx=".6"/><rect x="15" y="13" width="3" height="3" rx=".6"/><rect x="6" y="17" width="3" height="3" rx=".6"/><rect x="10.5" y="17" width="3" height="3" rx=".6"/></g></svg>
+        <span class="hp-text">ホットペッパーで予約する</span>
+        <span class="hp-arrow">›</span>
+      </span>
+      <span class="hp-sub">＼ 24時間予約受付中！ ／</span>
     </a>
   </div>
 
@@ -88,8 +126,13 @@
 
   <div class="cta-block">
     <img class="section" src="img/section10-e6.webp" alt="" loading="lazy">
-    <a class="shine-btn" href="https://utage-system.com/line/open/qelmGhBZePb5?mtid=pl4ZRQSJRFHp">
-      <img src="img/line-button.png?v=4" alt="LINEで無料相談を予約する">
+    <a class="cta-btn" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000571194">
+      <span class="hp-main">
+        <svg class="hp-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4.5" width="20" height="17" rx="2.5" fill="#fff"/><rect x="6" y="2" width="2.6" height="5" rx="1.3" fill="#fff"/><rect x="15.4" y="2" width="2.6" height="5" rx="1.3" fill="#fff"/><rect x="2" y="9.5" width="20" height="1.6" fill="#3e9a15"/><g fill="#3e9a15"><rect x="6" y="13" width="3" height="3" rx=".6"/><rect x="10.5" y="13" width="3" height="3" rx=".6"/><rect x="15" y="13" width="3" height="3" rx=".6"/><rect x="6" y="17" width="3" height="3" rx=".6"/><rect x="10.5" y="17" width="3" height="3" rx=".6"/></g></svg>
+        <span class="hp-text">ホットペッパーで予約する</span>
+        <span class="hp-arrow">›</span>
+      </span>
+      <span class="hp-sub">＼ 24時間予約受付中！ ／</span>
     </a>
   </div>
 
@@ -103,14 +146,19 @@
 
   <div class="cta-block">
     <img class="section" src="img/section15-e5.webp" alt="" loading="lazy">
-    <a class="shine-btn" href="https://utage-system.com/line/open/qelmGhBZePb5?mtid=pl4ZRQSJRFHp">
-      <img src="img/line-button.png?v=4" alt="LINEで無料相談を予約する">
+    <a class="cta-btn" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000571194">
+      <span class="hp-main">
+        <svg class="hp-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4.5" width="20" height="17" rx="2.5" fill="#fff"/><rect x="6" y="2" width="2.6" height="5" rx="1.3" fill="#fff"/><rect x="15.4" y="2" width="2.6" height="5" rx="1.3" fill="#fff"/><rect x="2" y="9.5" width="20" height="1.6" fill="#3e9a15"/><g fill="#3e9a15"><rect x="6" y="13" width="3" height="3" rx=".6"/><rect x="10.5" y="13" width="3" height="3" rx=".6"/><rect x="15" y="13" width="3" height="3" rx=".6"/><rect x="6" y="17" width="3" height="3" rx=".6"/><rect x="10.5" y="17" width="3" height="3" rx=".6"/></g></svg>
+        <span class="hp-text">ホットペッパーで予約する</span>
+        <span class="hp-arrow">›</span>
+      </span>
+      <span class="hp-sub">＼ 24時間予約受付中！ ／</span>
     </a>
   </div>
 
   <img class="section" src="img/section11-e5.webp" alt="" loading="lazy">
 
-  <p style="text-align:center; font-size:11px; color:#b0989a; padding:6px 0; background:#fdf3f4;">恵比寿店版 v8（最新版）</p>
+  <p style="text-align:center; font-size:11px; color:#b0989a; padding:6px 0; background:#fdf3f4;">恵比寿店版 v9（最新版）</p>
 
 </div>
 </body>
